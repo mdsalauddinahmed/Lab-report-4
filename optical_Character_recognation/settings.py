@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ocr',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +52,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'optical_Character_recognation.urls'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 TEMPLATES = [
     {
